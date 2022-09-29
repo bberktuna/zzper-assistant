@@ -11,6 +11,10 @@
 		C06BEED128C4E3D6007276DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BEED028C4E3D6007276DF /* ContentView.swift */; };
 		C06BEED328C4E3D7007276DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06BEED228C4E3D7007276DF /* Assets.xcassets */; };
 		C06BEED628C4E3D7007276DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06BEED528C4E3D7007276DF /* Preview Assets.xcassets */; };
+		C06BEEE128C4E9A0007276DF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BEEE028C4E9A0007276DF /* RegisterView.swift */; };
+		C06BEEE328C4E9A8007276DF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BEEE228C4E9A8007276DF /* LoginView.swift */; };
+		C06BEEE628C4EA63007276DF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C06BEEE528C4EA63007276DF /* Kingfisher */; };
+		C06BEEE928C4EAD7007276DF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BEEE828C4EAD7007276DF /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		C06BEED028C4E3D6007276DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C06BEED228C4E3D7007276DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06BEED528C4E3D7007276DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C06BEEE028C4E9A0007276DF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C06BEEE228C4E9A8007276DF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C06BEEE828C4EAD7007276DF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06BEEE628C4EA63007276DF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +59,10 @@
 		C06BEECD28C4E3D6007276DF /* zzper-assistant */ = {
 			isa = PBXGroup;
 			children = (
+				C06BEEDC28C4E447007276DF /* View */,
+				C06BEEDD28C4E978007276DF /* Model */,
+				C06BEEDE28C4E97E007276DF /* ModelView */,
 				C06BEECE28C4E3D6007276DF /* zzper_assistantApp.swift */,
-				C06BEED028C4E3D6007276DF /* ContentView.swift */,
 				C06BEED228C4E3D7007276DF /* Assets.xcassets */,
 				C06BEED428C4E3D7007276DF /* Preview Content */,
 			);
@@ -65,6 +75,47 @@
 				C06BEED528C4E3D7007276DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C06BEEDC28C4E447007276DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C06BEEE728C4EACB007276DF /* Main */,
+				C06BEEDF28C4E998007276DF /* Auth */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C06BEEDD28C4E978007276DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C06BEEDE28C4E97E007276DF /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		C06BEEDF28C4E998007276DF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C06BEEE028C4E9A0007276DF /* RegisterView.swift */,
+				C06BEEE228C4E9A8007276DF /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C06BEEE728C4EACB007276DF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C06BEED028C4E3D6007276DF /* ContentView.swift */,
+				C06BEEE828C4EAD7007276DF /* MainTabView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +134,9 @@
 			dependencies = (
 			);
 			name = "zzper-assistant";
+			packageProductDependencies = (
+				C06BEEE528C4EA63007276DF /* Kingfisher */,
+			);
 			productName = "zzper-assistant";
 			productReference = C06BEECB28C4E3D6007276DF /* zzper-assistant.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +165,9 @@
 				Base,
 			);
 			mainGroup = C06BEEC228C4E3D6007276DF;
+			packageReferences = (
+				C06BEEE428C4EA63007276DF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C06BEECC28C4E3D6007276DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06BEEE128C4E9A0007276DF /* RegisterView.swift in Sources */,
 				C06BEED128C4E3D6007276DF /* ContentView.swift in Sources */,
+				C06BEEE328C4E9A8007276DF /* LoginView.swift in Sources */,
 				C06BEECF28C4E3D6007276DF /* zzper_assistantApp.swift in Sources */,
+				C06BEEE928C4EAD7007276DF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C06BEEE428C4EA63007276DF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C06BEEE528C4EA63007276DF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C06BEEE428C4EA63007276DF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C06BEEC328C4E3D6007276DF /* Project object */;
 }
